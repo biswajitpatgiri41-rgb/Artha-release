@@ -1,0 +1,261 @@
+{
+  "data": {
+    "series_id": "cpi_yoy",
+    "source": "MoSPI package snapshot",
+    "source_url": "https://www.mospi.gov.in/",
+    "first_period": "2014-01",
+    "last_period": "2025-12",
+    "rows": 144,
+    "base_year": "2012=100",
+    "checksum": "b63b04c509e00cdb23edcb9acb8429da28bf5822787e70e0a28c62407e9f6d8b",
+    "vintage_note": "The packaged history contains publication metadata but not a complete real-time vintage panel; backtests are historical-snapshot, not vintage-perfect."
+  },
+  "backtests": {
+    "1": [
+      {
+        "model": "seasonal_naive",
+        "horizon": 1,
+        "mae": 1.9395690202796851,
+        "rmse": 2.3624182125200917,
+        "bias": 0.3038712506431083,
+        "n": 108
+      },
+      {
+        "model": "persistence",
+        "horizon": 1,
+        "mae": 0.583096350909154,
+        "rmse": 0.7706303425842025,
+        "bias": 0.019253594262299802,
+        "n": 108
+      },
+      {
+        "model": "ar1",
+        "horizon": 1,
+        "mae": 0.5816392303435359,
+        "rmse": 0.7673740570582923,
+        "bias": 0.0009163053322069728,
+        "n": 108
+      }
+    ],
+    "3": [
+      {
+        "model": "seasonal_naive",
+        "horizon": 3,
+        "mae": 1.9314200880544854,
+        "rmse": 2.2665797558060286,
+        "bias": 0.2729946441787992,
+        "n": 106
+      },
+      {
+        "model": "persistence",
+        "horizon": 3,
+        "mae": 1.0893866818987012,
+        "rmse": 1.3369839725325134,
+        "bias": 0.07481802968464864,
+        "n": 106
+      },
+      {
+        "model": "ar1",
+        "horizon": 3,
+        "mae": 1.0769785529312794,
+        "rmse": 1.3097676048516336,
+        "bias": 0.004546064960909178,
+        "n": 106
+      }
+    ],
+    "6": [
+      {
+        "model": "seasonal_naive",
+        "horizon": 6,
+        "mae": 1.7939088692947065,
+        "rmse": 2.171462309999683,
+        "bias": 0.2198485592713925,
+        "n": 103
+      },
+      {
+        "model": "persistence",
+        "horizon": 6,
+        "mae": 1.3762971343578325,
+        "rmse": 1.6911856346064587,
+        "bias": 0.11515921898988303,
+        "n": 103
+      },
+      {
+        "model": "ar1",
+        "horizon": 6,
+        "mae": 1.2875562183977425,
+        "rmse": 1.6222456646744643,
+        "bias": -0.05438002661836279,
+        "n": 103
+      }
+    ]
+  },
+  "forecasts": {
+    "1": {
+      "run_id": "b575db05-5299-492a-9cfd-40a2d3c3f500",
+      "target": "cpi_yoy",
+      "model": "ar1",
+      "model_version": "arthaai-deterministic-1.0",
+      "data_vintage": "2025-12",
+      "trained_until": "2025-12",
+      "points": [
+        {
+          "horizon": 1,
+          "period": "2026-01",
+          "point": 1.6494,
+          "lower80": 0.6671,
+          "upper80": 2.6316
+        }
+      ],
+      "metrics": {
+        "mae": 0.5816392303435359,
+        "rmse": 0.7673740570582923,
+        "bias": 0.0009163053322069728,
+        "n": 108.0
+      },
+      "interval_method": "residual RMSE scaled by sqrt(h); empirical coverage must be recalibrated on refreshed vintages",
+      "warnings": [
+        "The packaged history contains publication metadata but not a complete real-time vintage panel; backtests are historical-snapshot, not vintage-perfect."
+      ],
+      "evidence": [
+        {
+          "claim": "Derived headline CPI year-on-year inflation",
+          "value": 1.3306038894575156,
+          "unit": "% YoY",
+          "date": "2025-12",
+          "source": "MoSPI package snapshot",
+          "source_url": "https://www.mospi.gov.in/",
+          "series_id": "cpi_yoy",
+          "status": "derived"
+        }
+      ]
+    },
+    "3": {
+      "run_id": "a6cafdb9-5d1a-4d13-bbd5-bc84e94b6cd9",
+      "target": "cpi_yoy",
+      "model": "ar1",
+      "model_version": "arthaai-deterministic-1.0",
+      "data_vintage": "2025-12",
+      "trained_until": "2025-12",
+      "points": [
+        {
+          "horizon": 1,
+          "period": "2026-01",
+          "point": 1.6494,
+          "lower80": -0.0271,
+          "upper80": 3.3259
+        },
+        {
+          "horizon": 2,
+          "period": "2026-02",
+          "point": 1.9354,
+          "lower80": -0.4355,
+          "upper80": 4.3064
+        },
+        {
+          "horizon": 3,
+          "period": "2026-03",
+          "point": 2.1921,
+          "lower80": -0.7117,
+          "upper80": 5.0959
+        }
+      ],
+      "metrics": {
+        "mae": 1.0769785529312794,
+        "rmse": 1.3097676048516336,
+        "bias": 0.004546064960909178,
+        "n": 106.0
+      },
+      "interval_method": "residual RMSE scaled by sqrt(h); empirical coverage must be recalibrated on refreshed vintages",
+      "warnings": [
+        "The packaged history contains publication metadata but not a complete real-time vintage panel; backtests are historical-snapshot, not vintage-perfect."
+      ],
+      "evidence": [
+        {
+          "claim": "Derived headline CPI year-on-year inflation",
+          "value": 1.3306038894575156,
+          "unit": "% YoY",
+          "date": "2025-12",
+          "source": "MoSPI package snapshot",
+          "source_url": "https://www.mospi.gov.in/",
+          "series_id": "cpi_yoy",
+          "status": "derived"
+        }
+      ]
+    },
+    "6": {
+      "run_id": "42ba5972-9454-437c-a5c4-0a057115e8e1",
+      "target": "cpi_yoy",
+      "model": "ar1",
+      "model_version": "arthaai-deterministic-1.0",
+      "data_vintage": "2025-12",
+      "trained_until": "2025-12",
+      "points": [
+        {
+          "horizon": 1,
+          "period": "2026-01",
+          "point": 1.6494,
+          "lower80": -0.4271,
+          "upper80": 3.7258
+        },
+        {
+          "horizon": 2,
+          "period": "2026-02",
+          "point": 1.9354,
+          "lower80": -1.0012,
+          "upper80": 4.872
+        },
+        {
+          "horizon": 3,
+          "period": "2026-03",
+          "point": 2.1921,
+          "lower80": -1.4044,
+          "upper80": 5.7887
+        },
+        {
+          "horizon": 4,
+          "period": "2026-04",
+          "point": 2.4225,
+          "lower80": -1.7305,
+          "upper80": 6.5754
+        },
+        {
+          "horizon": 5,
+          "period": "2026-05",
+          "point": 2.6292,
+          "lower80": -2.014,
+          "upper80": 7.2723
+        },
+        {
+          "horizon": 6,
+          "period": "2026-06",
+          "point": 2.8147,
+          "lower80": -2.2717,
+          "upper80": 7.901
+        }
+      ],
+      "metrics": {
+        "mae": 1.2875562183977425,
+        "rmse": 1.6222456646744643,
+        "bias": -0.05438002661836279,
+        "n": 103.0
+      },
+      "interval_method": "residual RMSE scaled by sqrt(h); empirical coverage must be recalibrated on refreshed vintages",
+      "warnings": [
+        "The packaged history contains publication metadata but not a complete real-time vintage panel; backtests are historical-snapshot, not vintage-perfect."
+      ],
+      "evidence": [
+        {
+          "claim": "Derived headline CPI year-on-year inflation",
+          "value": 1.3306038894575156,
+          "unit": "% YoY",
+          "date": "2025-12",
+          "source": "MoSPI package snapshot",
+          "source_url": "https://www.mospi.gov.in/",
+          "series_id": "cpi_yoy",
+          "status": "derived"
+        }
+      ]
+    }
+  }
+}

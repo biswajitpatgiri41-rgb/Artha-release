@@ -1,0 +1,36 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+pydantic>=2.9,<3
+pydantic-settings>=2.4,<3
+openai>=1.40,<2
+python-dotenv>=1.0,<2
+httpx>=0.27,<1
+numpy>=1.26,<3
+psutil>=6,<8
+pandas>=2.2,<4
+openpyxl>=3.1,<4
+python-multipart>=0.0.20,<1
+pypdf>=5,<7
+# ChromaDB is intentionally excluded from the Vercel dependency set. Vercel
+# functions use the lightweight in-memory evidence index; Docker/local installs
+# use the full dependency declared in pyproject.toml.
+python-magic>=0.4.27; platform_system != "Windows"
+python-magic-bin>=0.4.14; platform_system == "Windows"
+# Runtime authentication dependencies imported while the API routers start.
+argon2-cffi>=23.1,<24
+passlib>=1.7,<2
+python-jose>=3.3,<4
+pyotp>=2.9,<3
+qrcode>=7.4,<8
+slowapi>=0.1,<1
+cryptography>=42,<43
+email-validator>=2.2,<3
+# Install `pip install -e ".[econometrics,dev]"` for optional model tooling
+# and the project development test suite.
+pytest>=8,<9
+pytest-asyncio>=0.23,<1
+scipy>=1.13,<2
+statsmodels>=0.14,<1
+scikit-learn>=1.5,<2
+xgboost>=2,<4
+joblib>=1.4,<2

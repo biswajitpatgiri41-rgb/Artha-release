@@ -1,0 +1,69 @@
+{
+  "source_files": [
+    {
+      "path": "mospi/cpi_2024_back_series.csv",
+      "sha256": "f3faa1f5491268c9ab7af5a65d83bfdb488a0db6b063d906def050cff7f51f1c",
+      "bytes": 30733
+    },
+    {
+      "path": "mospi/cpi_2024_current_all_india_detailed.csv",
+      "sha256": "5677bf996fa416945a25c7acbb4609f5e771b6ab58b89a2441208352116170b8",
+      "bytes": 7836194
+    },
+    {
+      "path": "fred/DCOILBRENTEU.csv",
+      "sha256": "cf9f077822a7620434e86b7d48aa44bada7ef99f57726d50035ae50b549e9011",
+      "bytes": 170111
+    },
+    {
+      "path": "fred/DEXINUS.csv",
+      "sha256": "ff1cc57b94df1ee7593a1425d6f7fd7f3cd9e73fe61effc7d3fc34d2bc4a14c7",
+      "bytes": 260132
+    },
+    {
+      "path": "fred/CPIAUCSL.csv",
+      "sha256": "8556b710094027fa4724641d48be620cc37c04abfa15a0c496378cf1146c1549",
+      "bytes": 17763
+    },
+    {
+      "path": "fred/FEDFUNDS.csv",
+      "sha256": "74680b2d09bb28f90fb30c1c09e93ac2d443de1b7345ba5a9112b3eca9be0a25",
+      "bytes": 13959
+    },
+    {
+      "path": "fred/DCOILWTICO.csv",
+      "sha256": "dccb1f7fda2711b3cdedba44362f1e4300a319eaf822b47a716b22290bda286a",
+      "bytes": 175886
+    },
+    {
+      "path": "fred/CPILFESL.csv",
+      "sha256": "182058ceeb094cb2af1dfe7474553c50d779e3907c9472302d30c0d64ea147d0",
+      "bytes": 15603
+    },
+    {
+      "path": "fred/DTWEXBGS.csv",
+      "sha256": "a7b6e593bf1c9dd6c4601c1bd52de979b148eb2e98679ce1cafcda789f372d59",
+      "bytes": 104637
+    },
+    {
+      "path": "fred/DGS10.csv",
+      "sha256": "b5b9dd4b0f63db388b93f80f546aa01cb2af0bd7b3a5d1b0e6d4aed1bb253918",
+      "bytes": 269059
+    },
+    {
+      "path": "world_bank/pink_sheet_monthly_commodity_prices.xlsx",
+      "sha256": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
+      "bytes": 586099
+    },
+    {
+      "path": "wpi/wpi_2011_12_monthly_from_2012.xls",
+      "sha256": "3265d404b82f5911660797d270a4f813e33b3aa48184dae234478b044bc91d59",
+      "bytes": 1339904
+    }
+  ],
+  "notes": [
+    "Pink Sheet Food/Energy/Fertilizers monthly indexes are lagged one month and used as global benchmark-price proxies, not Indian retail food prices.",
+    "Official 2011-12-base WPI All commodities and IV FOOD INDEX YoY predictors use a five-month effective lag; the source workbook ends April 2026, and no values are filled forward.",
+    "No 2012-base CPI-food series is spliced into the official 2024-base target. Food-category CPI remains a candidate for a separate, vintage-aware component model."
+  ]
+}

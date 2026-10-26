@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "run_id_present": true,
+    "forecast_values_present": true,
+    "interval_order": true,
+    "model_version_present": true,
+    "source_citation_present": true,
+    "critic_pass_or_warning": true,
+    "tool_events_present": true
+  },
+  "run_id": "35d53695-2036-47a6-86b7-ba16de1cd99c"
+}
